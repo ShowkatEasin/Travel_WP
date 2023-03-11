@@ -1,0 +1,33 @@
+.page-links {
+	clear: both;
+	margin: 0 0 1em;
+	padding-top: 20px;
+
+	> * {
+		box-sizing: content-box;
+		width: 34px;
+		height: 34px;
+		line-height: 34px;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 400;
+		display: inline-block;
+		color: var(--resa_black_color);
+		border:1px solid var(--resa_border_color);
+		background-color:var(--resa_white_color);
+		border-radius:5px;
+
+
+		&:hover {
+			border:1px solid var(--resa_primary_color);
+			background-color: var(--resa_primary_color);
+			color: var(--resa_white_color);
+		}
+	}
+
+	> *.current {
+		border:1px solid var(--resa_primary_color);
+		background-color: var(--resa_primary_color);
+		color: var(--resa_white_color);
+	}
+}

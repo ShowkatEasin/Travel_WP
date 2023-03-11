@@ -1,0 +1,30 @@
+.entry-content {
+	&::before {
+		content: "";
+		display: table;
+	}
+
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	img.wp-smiley {
+		border: none;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding: 0;
+		display: inline-block;
+		border-radius: 0;
+	}
+	a {
+		--resa_link_text_decoration: underline;
+	}
+}
+
+.entry-excerpt{
+	a {
+		--resa_link_text_decoration: underline;
+	}
+}

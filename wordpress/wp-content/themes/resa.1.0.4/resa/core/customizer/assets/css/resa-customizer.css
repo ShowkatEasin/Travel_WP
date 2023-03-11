@@ -1,0 +1,231 @@
+
+.control-section {
+	min-height: 100%;
+}
+
+.control-section-default.open {
+	-js-display: flex !important;
+	display: -webkit-box !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.control-section-default.open .customize-control {
+	padding-bottom: 30px;
+	padding-top: 30px;
+	position: relative;
+	margin-bottom: 0px;
+}
+
+.control-section-default.open .customize-control::after {
+	content: '';
+	position: absolute;
+	left: -100%;
+	background-color: #D1D5DB;
+	width: 500%;
+	height: 1px;
+
+	bottom: 0;
+}
+
+.control-section-default.open .customize-control:last-child:after {
+	display: none;
+}
+
+.control-section-default.open .customize-control input[type=text]:not(.wp-color-picker),
+.control-section-default.open .customize-control textarea,
+.control-section-default.open .customize-control select {
+	border-radius: 3px;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	padding: 2px 8px;
+	font-size: 12px;
+	border-color: #d1d5db;
+}
+
+.control-section-default.open .customize-control input[type=text]:not(.wp-color-picker):focus::-webkit-input-placeholder, .control-section-default.open .customize-control textarea:focus::-webkit-input-placeholder, .control-section-default.open .customize-control select:focus::-webkit-input-placeholder {
+	opacity: 0.6;
+}
+
+.control-section-default.open .customize-control input[type=text]:not(.wp-color-picker):focus::-moz-placeholder, .control-section-default.open .customize-control textarea:focus::-moz-placeholder, .control-section-default.open .customize-control select:focus::-moz-placeholder {
+	opacity: 0.6;
+}
+
+.control-section-default.open .customize-control input[type=text]:not(.wp-color-picker):focus:-ms-input-placeholder, .control-section-default.open .customize-control textarea:focus:-ms-input-placeholder, .control-section-default.open .customize-control select:focus:-ms-input-placeholder {
+	opacity: 0.6;
+}
+
+.control-section-default.open .customize-control input[type=text]:not(.wp-color-picker):focus::-ms-input-placeholder, .control-section-default.open .customize-control textarea:focus::-ms-input-placeholder, .control-section-default.open .customize-control select:focus::-ms-input-placeholder {
+	opacity: 0.6;
+}
+
+.control-section-default.open .customize-control input[type=text]:not(.wp-color-picker):focus::placeholder,
+.control-section-default.open .customize-control textarea:focus::placeholder,
+.control-section-default.open .customize-control select:focus::placeholder {
+	opacity: 0.6;
+}
+
+.control-section-default.open .customize-control select {
+	cursor: pointer;
+}
+
+.control-section-default.open .customize-control textarea {
+	padding: 10px 8px;
+	width: 100%;
+}
+
+.control-section-default.open .widget-top .widget-action:focus .toggle-indicator:before {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.control-section-default.open .widget-top .toggle-indicator {
+	border-radius: 50%;
+}
+
+.control-section-default.open .widget-top .toggle-indicator:hover {
+	background-color: #f0f0f0;
+	color: #000;
+}
+
+.resa-control-wrapper .customize-control-title {
+	-js-display: flex;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-ms-flex: 1;
+	flex: 1;
+	align-items: center;
+}
+
+.resa-info-icon {
+	margin-left: 10px;
+	margin-top: 2px;
+	-js-display: flex;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-left: 5px;
+	position: relative;
+}
+
+.resa-info-icon:focus svg, .resa-info-icon:hover svg {
+	fill: none;
+	stroke: #555d66;
+}
+
+.resa-info-icon svg {
+	fill: none;
+	stroke: #c7c7c7;
+	cursor: pointer;
+}
+
+.reset-defaults {
+	width: 20px;
+	height: 20px;
+	color: #0073aa;
+	transition: opacity .2s ease, transform .2s ease;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.resa-tooltip {
+	display: none;
+	color: #d6e1e8;
+	font-size: 13px;
+	font-style: normal;
+	width: 300px;
+	padding: 16px 18px;
+	z-index: 991;
+	border-radius: 3px;
+	line-height: 1.6;
+	bottom: 100%;
+	transform: translateY(-13px);
+}
+
+.resa-responsive-switchers {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	margin-left: auto;
+
+}
+
+.resa-responsive-switchers li.resa-desktop {
+	flex-direction: column;
+}
+
+
+.resa-responsive-switchers li.resa-desktop:before {
+	margin-bottom: 1px;
+	width: 17px;
+	height: 11px;
+
+}
+
+.resa-responsive-switchers li.resa-tablet:before {
+	width: 13px;
+	height: 14px;
+	border-bottom-width: 3px;
+}
+
+.resa-responsive-switchers li.resa-mobile:before {
+	width: 10px;
+	height: 14px;
+	border-bottom-width: 3px;
+}
+
+
+.resa-responsive-switchers li.resa-desktop:after {
+	width: 9px;
+	height: 2px;
+	background: #a5abaf;
+}
+
+.resa-responsive-switchers li:not(:last-child) {
+	margin-inline-end: 10px;
+}
+
+.resa-responsive-switchers li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	color: #a5abaf;
+	margin-bottom: 0;
+
+}
+
+.resa-responsive-switchers li:before {
+	border: 2px solid #a5abaf;
+}
+
+.resa-responsive-switchers li:after,
+.resa-responsive-switchers li:before {
+	content: "";
+	border-radius: 2px;
+	box-sizing: border-box
+}
+
+.resa-responsive-switchers li:not(.active):hover {
+	color: #a5abaf;
+}
+
+.resa-responsive-switchers li.active:before {
+
+	border-color: #2271b1;
+
+}
+
+.resa-responsive-switchers li.resa-desktop.active:after {
+	background-color: #2271b1;
+}

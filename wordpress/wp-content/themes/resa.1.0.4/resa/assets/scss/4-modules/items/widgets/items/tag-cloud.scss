@@ -1,0 +1,21 @@
+.widget.widget_tag_cloud .tagcloud, .wp-block-tag-cloud {
+	a {
+		display: inline-block;
+		font-weight: 400;
+		line-height: 1.7142857143;
+		color: var(--resa_base_text_color);
+		background-color: transparent;
+		border: 1px solid #E1E1E1;
+		margin-bottom: 10px;
+		margin-right: 10px;
+		padding: 4px 10px;
+		border-radius: 5px;
+
+		&:hover {
+			color: var(--resa_white_color);
+			background-color: var(--resa_primary_color);
+			border-color: var(--resa_primary_color);
+			text-decoration: unset;
+		}
+	}
+}

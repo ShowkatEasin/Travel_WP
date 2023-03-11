@@ -1,0 +1,6 @@
+h1 {
+	@include heading_tag();
+	font-size: var(--resa_heading_h1_font_size);
+	line-height: 1.1;
+	color: var(--resa_black_color); //var(--heading-color, var(--heading-1-color, var(--headings-color)));
+}

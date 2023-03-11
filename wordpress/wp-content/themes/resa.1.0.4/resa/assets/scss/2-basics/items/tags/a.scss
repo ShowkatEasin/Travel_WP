@@ -1,0 +1,11 @@
+a {
+	color: var(--resa_link_color);
+	text-decoration: var(--resa_link_text_decoration);
+
+	&:hover {
+		color: var(--resa_link_hover_color);
+		outline: 0;
+		text-decoration: var(--resa_link_text_decoration);;
+	}
+
+}

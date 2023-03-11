@@ -1,0 +1,21 @@
+.site-content {
+
+	.resa-primary-content-area {
+
+		flex: var(--resa_primary_content_area_flex);
+		order: var(--resa_primary_content_area_flex_order);
+		word-break: break-word;
+		min-width: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.resa-secondary-sidebar-area {
+		flex: var(--resa_secondary_sidebar_flex);
+		order: var(--resa_secondary_sidebar_flex_order);
+		word-break: break-word;
+		min-width: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}

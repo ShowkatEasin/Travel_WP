@@ -1,0 +1,30 @@
+.site-branding {
+	margin-bottom: 0;
+	display: block;
+	clear: both;
+
+	.custom-logo-link {
+
+	}
+
+	img {
+		height: auto;
+	}
+
+	.site-title {
+		font-size: 2em;
+		letter-spacing: -1px;
+		margin: 0;
+		font-family: var(--resa_system_font_family);
+		font-weight: 700;
+		line-height: inherit;
+	}
+
+	.site-description {
+		margin:0;
+ 	}
+
+	.logo {
+		margin: 0;
+	}
+}

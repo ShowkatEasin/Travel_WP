@@ -1,0 +1,388 @@
+# <!=Copyright (C) 2023 Mantra Brain
+# This file is distributed under the GNU General Public License v2 or later.=!>
+msgid ""
+msgstr ""
+"Project-Id-Version: Resa 1.0.4\n"
+"Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
+"POT-Creation-Date: 2023-02-19 07:38:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: 404.php:9
+msgid "404 Page"
+msgstr ""
+
+#: 404.php:12
+msgid "Oops! That Page Can’t Be Found."
+msgstr ""
+
+#: 404.php:15
+msgid "The Page you are looking for doesn't exitst. Go to "
+msgstr ""
+
+#: 404.php:17
+msgid "Home page"
+msgstr ""
+
+#: comments.php:12
+msgid "Post Comments"
+msgstr ""
+
+#: comments.php:29
+msgid "Comment Navigation Above"
+msgstr ""
+
+#: comments.php:30 comments.php:51
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:31 comments.php:52
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:32 comments.php:53
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:50
+msgid "Comment Navigation Below"
+msgstr ""
+
+#: comments.php:64
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:71
+msgid "Comment"
+msgstr ""
+
+#: core/class-resa-walker-page.php:47 core/class-resa-walker-page.php:58
+#: core/hooks/navigation.php:54
+msgid "Menu Toggle"
+msgstr ""
+
+#: core/class-resa-widgets.php:67
+msgid "Sidebar Archive"
+msgstr ""
+
+#: core/class-resa-widgets.php:72
+msgid "Sidebar Single Post"
+msgstr ""
+
+#: core/class-resa-widgets.php:78
+msgid "Footer Widget Area 1"
+msgstr ""
+
+#: core/class-resa-widgets.php:83
+msgid "Footer Widget Area 2"
+msgstr ""
+
+#: core/class-resa-widgets.php:88
+msgid "Footer Widget Area 3"
+msgstr ""
+
+#: core/class-resa-widgets.php:93
+msgid "Footer Widget Area 4"
+msgstr ""
+
+#: core/class-resa.php:115
+msgid "Primary Menu"
+msgstr ""
+
+#: core/class-resa.php:116
+msgid "Mobile Menu"
+msgstr ""
+
+#: core/class-resa.php:178
+msgid "Small"
+msgstr ""
+
+#: core/class-resa.php:183
+msgid "Normal"
+msgstr ""
+
+#: core/class-resa.php:188
+msgid "Medium"
+msgstr ""
+
+#: core/class-resa.php:193
+msgid "Large"
+msgstr ""
+
+#: core/class-resa.php:198
+msgid "Huge"
+msgstr ""
+
+#: core/class-resa.php:329
+msgid "Post Navigation"
+msgstr ""
+
+#: core/customizer/controls/control.php:55
+msgid "Desktop"
+msgstr ""
+
+#: core/customizer/controls/control.php:59
+msgid "Tablet"
+msgstr ""
+
+#: core/customizer/controls/control.php:63
+msgid "Mobile"
+msgstr ""
+
+#: core/customizer/controls/spacing/customize.php:47
+msgid "Link values"
+msgstr ""
+
+#: core/customizer/panels.php:49
+msgid "Header"
+msgstr ""
+
+#: core/customizer/panels.php:55
+msgid "Footer"
+msgstr ""
+
+#: core/customizer/sections.php:48
+msgid "Main Header"
+msgstr ""
+
+#: core/customizer/sections.php:54
+msgid "Footer Widgets"
+msgstr ""
+
+#: core/customizer/sections.php:59
+msgid "Footer Copyright"
+msgstr ""
+
+#: core/customizer/settings/footer-copyright.php:32
+msgid "Copyright text"
+msgstr ""
+
+#: core/customizer/settings/footer-copyright.php:41
+msgid "Background color"
+msgstr ""
+
+#: core/customizer/settings/footer-widgets.php:33
+msgid "Show Widgets"
+msgstr ""
+
+#: core/customizer/settings/header.php:33
+msgid "Show Tagline"
+msgstr ""
+
+#: core/customizer/settings/header.php:43
+msgid "Header Padding"
+msgstr ""
+
+#: core/customizer/settings/header.php:44
+msgid "Specify spacing around logo. Negative values are allowed."
+msgstr ""
+
+#: core/customizer/settings/header.php:49
+msgid "Top"
+msgstr ""
+
+#: core/customizer/settings/header.php:50
+msgid "Bottom"
+msgstr ""
+
+#: core/customizer/settings/header.php:70
+msgid "Show Yatra mini cart"
+msgstr ""
+
+#: core/helpers/html-content.php:69
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: core/helpers/html-content.php:90
+msgid "Edit"
+msgstr ""
+
+#: core/helpers/html-content.php:122
+#. Translators: Author Name.
+msgid "View all posts by %1$s"
+msgstr ""
+
+#: core/helpers/html-content.php:185 core/helpers/html-content.php:271
+msgid "Categories"
+msgstr ""
+
+#: core/helpers/html-content.php:193
+msgid "By "
+msgstr ""
+
+#: core/helpers/html-content.php:231
+msgid "0 comments"
+msgstr ""
+
+#: core/helpers/html-content.php:231
+msgid "1 comment"
+msgstr ""
+
+#: core/helpers/html-content.php:231
+msgid "% comments"
+msgstr ""
+
+#: core/helpers/html-content.php:246
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: core/helpers/html-footer.php:6
+msgid "Resa WordPress Theme"
+msgstr ""
+
+#: core/helpers/html-header.php:107
+msgid "Primary Navigation"
+msgstr ""
+
+#: core/helpers/html-header.php:131
+msgid "Menu"
+msgstr ""
+
+#: core/helpers/html-header.php:159
+msgid "Mobile Navigation"
+msgstr ""
+
+#: core/hooks/loop.php:74
+msgid "Read more"
+msgstr ""
+
+#: core/hooks/loop.php:80 core/hooks/page.php:63 core/hooks/single.php:79
+msgid "Pages:"
+msgstr ""
+
+#: core/hooks/loop.php:90 core/hooks/single.php:126
+msgid "Next"
+msgstr ""
+
+#: core/hooks/loop.php:91
+msgid "Previous"
+msgstr ""
+
+#: core/hooks/single.php:100
+#. translators: used between list items, there is a space after the comma
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/hooks/single.php:129
+msgid "Prev"
+msgstr ""
+
+#: core/hooks/template.php:24
+msgid "Your Name *"
+msgstr ""
+
+#: core/hooks/template.php:30
+msgid "Email Address *"
+msgstr ""
+
+#: core/hooks/template.php:36
+msgid "Your Website"
+msgstr ""
+
+#: core/third-party/batch/wp-background-process.php:445
+#. translators: %d: Minutes interval
+msgid "Every %d Minutes"
+msgstr ""
+
+#: header.php:20 header.php:22
+msgid "Skip to content"
+msgstr ""
+
+#: search.php:16
+#. translators: %s: search term
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:4
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:7
+msgid "Search"
+msgstr ""
+
+#: template-parts/none.php:3
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/none.php:12
+#. translators: 1: URL
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/none.php:18
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/none.php:23
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Resa"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://wpyatra.com/best-wordpress-travel-theme/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Resa is a fast, fully customizable & beautiful WordPress theme suitable for "
+"a travel booking website, a blog site, personal portfolio websites, "
+"business websites, and any kind of WordPress travel booking site. It works "
+"like a charm with popular WordPress page builders, including Elementor, "
+"Beaver Builder, Visual Composer, and Brizy. Plus, it is schema.org friendly "
+"and SEO optimized to get top ranking in Google. It is very lightweight and "
+"offers unparalleled speed. Resa is a core web vitals optimized free "
+"WordPress theme to create a travel booking website for tour and travel "
+"operators and companies. It is lightweight, built with performance in mind, "
+"minimalistic theme for your next travel booking website. Apart from travel "
+"booking companies, you can also use a Resa theme for travel blogging, "
+"hotel, spa, bed and breakfasts, luxury resort, reservation, tour operators, "
+"tourism, transport, and car booking. Resa WordPress theme is "
+"speed-optimized, translation ready, SEO-friendly, and mobile-friendly. It "
+"is fully compatible with the most popular WordPress Travel Booking plugin "
+"Yatra so that anyone can build their travel booking website easily with a "
+"clean and modern design. Yatra + Resa is the best travel booking website "
+"building platform on the WordPress ecosystem. Learn more about the theme "
+"and ready to import demo sites at "
+"https://wpyatra.com/best-wordpress-travel-theme/"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mantra Brain"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid ""
+"https://mantrabrain.com/about-us/?utm_source=theme_preview&utm_"
+"medium=author_link&utm_campaign=resa_theme"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Resa Full Width"
+msgstr ""
+
+#: comments.php:21
+#. translators: 1: number of comments, 2: post title
+msgctxt "comments title"
+msgid "%1$s Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""

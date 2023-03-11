@@ -1,0 +1,348 @@
+@import '../../1-helpers/items/mixins';
+@import '../../1-helpers/items/functions';
+
+
+#comments {
+	margin-top: 50px;
+}
+
+#comments .comment-form p {
+	margin-bottom: 1em;
+}
+
+#comments .comment-form .comment-form-author,
+#comments .comment-form .comment-form-email,
+#comments .comment-form .comment-form-url {
+	margin-bottom: 20px;
+}
+
+#comments .comment-form .comment-form-author input,
+#comments .comment-form .comment-form-email input,
+#comments .comment-form .comment-form-url input {
+	width: 100%;
+}
+
+#comments .comment-form .comment-notes, #comments .comment-form .logged-in-as, #comments .comment-form .comment-form-cookies-consent, #comments .comment-form .comment-form-comment {
+	margin-bottom: 20px;
+}
+
+#comments .comment-form .comment-notes a, #comments .comment-form .logged-in-as a, #comments .comment-form .comment-form-cookies-consent a, #comments .comment-form .comment-form-comment a {
+	text-decoration: underline;
+	color: var(--resa_base_text_color);
+}
+
+#comments .comment-form .comment-notes a:hover, #comments .comment-form .logged-in-as a:hover, #comments .comment-form .comment-form-cookies-consent a:hover, #comments .comment-form .comment-form-comment a:hover {
+	color: var(--resa_primary_color);
+}
+
+#comments .comments-title {
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+#comments .comment-form-author,
+#comments .comment-form-email,
+#comments .comment-form-url {
+	padding: 0 10px;
+	order: -1;
+}
+
+@media (min-width: 1024px) {
+	#comments .comment-form-author,
+	#comments .comment-form-email,
+	#comments .comment-form-url {
+		flex: 0 0 33.3333333333%;
+		max-width: 33.3333333333%;
+	}
+}
+
+#comments .comment-notes {
+	flex: 0 0 100%;
+	max-width: 100%;
+	order: -1;
+}
+
+#comments .comment-form-comment {
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+#comments .comment-form-cookies-consent {
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+#comments .comment-list {
+	position: relative;
+	list-style: none;
+	margin: 0;
+}
+
+#comments .comment-list .comment-body {
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#comments .comment-list .comment-body::before, #comments .comment-list .comment-body::after {
+	content: "";
+	display: table;
+}
+
+#comments .comment-list .comment-body::after {
+	clear: both;
+}
+
+#comments .comment-list .comment-author {
+	display: none;
+}
+
+@media (min-width: 1024px) {
+	#comments .comment-list .comment-author {
+		display: block;
+	}
+}
+
+#comments .comment-list .avatar {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 10px;
+	margin-right: 20px;
+}
+
+#comments .comment-list .comment-content {
+	width: 100%;
+	padding: 17px 40px;
+	background: #F7F7F7;
+	border-radius: 5px;
+	position: relative;
+}
+
+@media (min-width: 1024px) {
+	#comments .comment-list .comment-content {
+		width: calc(100% - 80px);
+	}
+
+	#comments .comment-list .comment-content:before {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-right: 10px solid #F7F7F7;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		left: -10px;
+		top: 25px;
+	}
+}
+
+#comments .comment-list .comment-content .comment-text {
+	margin-bottom: 8px;
+
+	a {
+		--resa_link_text_decoration: underline;
+	}
+}
+
+#comments .comment-list .comment-content .comment-text p:last-child {
+	margin-bottom: 0;
+}
+
+#comments .comment-list .comment-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 8px;
+	flex-wrap: wrap;
+}
+
+#comments .comment-list .comment-meta {
+	margin-right: 10px;
+}
+
+#comments .comment-list .comment-meta a.comment-date {
+	color: var(--resa_light_text_color);
+	font-size: 14px;
+	font-weight: 500;
+}
+
+#comments .comment-list .comment-meta a.comment-date:hover {
+	color: var(--resa_primary_color);
+}
+
+#comments .comment-list .comment-meta .comment-author {
+	display: inline-block;
+	margin-right: 6px;
+}
+
+#comments .comment-list .comment-meta cite {
+	color: var(--resa_black_color);
+	font-style: normal;
+	clear: both;
+	display: block;
+	letter-spacing: 0.02em;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: var(--e-global-typography-accent-font-family);
+}
+
+#comments .comment-list .comment-meta cite a {
+	color: var(--resa_black_color);
+}
+
+#comments .comment-list .comment-meta cite a:hover {
+	color: var(--resa_primary_color);
+}
+
+#comments .comment-list .trackback .comment-body .comment-content:before,
+#comments .comment-list .pingback .comment-body .comment-content:before {
+	content: none;
+}
+
+#comments .comment-list .reply::before, #comments .comment-list .reply::after {
+	content: "";
+	display: table;
+}
+
+#comments .comment-list .reply::after {
+	clear: both;
+}
+
+#comments .comment-list .reply a {
+	font-size: 14px;
+	line-height: 1.7142857143;
+	display: inline-block;
+	margin-right: 5px;
+	padding: 5px 11px;
+	font-weight: 700;
+	border-radius: 5px;
+	background-color: var(--resa_primary_color);
+	color: var(--resa_white_color);
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#comments .comment-list .reply a:before {
+	margin-right: 6px;
+}
+
+#comments .comment-list .reply a:last-child {
+	margin-right: 0;
+}
+
+#comments .comment-list .children {
+	list-style: none;
+}
+
+#comments .comment-list #respond {
+	padding: 20px 1.618em 15px;
+	background-color: rgba(0, 0, 0, 0.0125);
+	margin: 10px 0 10px auto;
+	border-radius: 20px;
+	border: 1px solid var(--resa_border_color);
+	width: 100%;
+}
+
+@media (min-width: 1024px) {
+	#comments .comment-list #respond {
+		width: calc(100% - 80px);
+	}
+}
+
+#comments .bypostauthor {
+	font-size: inherit;
+}
+
+#comments blockquote {
+	margin-left: 0;
+}
+
+#commentform {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+}
+
+#commentform > p, #commentform .comment-form-rating {
+	padding: 0 10px;
+	width: 100%;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+#respond {
+	clear: both;
+	position: relative;
+	margin-top: 30px;
+}
+
+#respond .comment-form-cookies-consent label {
+	color: var(--resa_base_text_color);
+}
+
+#respond .form-submit,
+#respond form {
+	margin-bottom: 0;
+}
+
+#respond label {
+	color: var(--resa_black_color);
+}
+
+#respond #reply-title {
+	color: var(--resa_black_color);
+	font-size: 24px;
+	margin-bottom: 10px;
+	line-height: 1.3333333333;
+	font-weight: 500;
+	font-family: var(--e-global-typography-accent-font-family);
+}
+
+#respond #cancel-comment-reply-link {
+	position: absolute;
+	top: 15px;
+	right: 0.5407911001em;
+	display: block;
+	height: 1.5rem;
+	width: 1.5rem;
+	overflow: hidden;
+	line-height: 1;
+	font-size: 1.5rem;
+	text-align: center;
+	transition: transform, ease, 0.3s;
+}
+
+#respond #cancel-comment-reply-link:hover {
+	transform: scale(1.3);
+}
+
+.comment-content {
+	&::before {
+		content: "";
+		display: table;
+	}
+
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	a {
+		word-wrap: break-word;
+	}
+
+	img.wp-smiley {
+		border: none;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding: 0;
+		display: inline-block;
+		border-radius: 0;
+	}
+}

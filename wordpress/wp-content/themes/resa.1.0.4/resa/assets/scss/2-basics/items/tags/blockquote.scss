@@ -1,0 +1,27 @@
+blockquote {
+
+	font-size: 18px;
+	color: var(--resa_black_color);
+
+
+	p {
+		position: relative;
+
+		&:first-child {
+			&:before {
+				color: var(--resa_primary_color);
+				font-style: normal;
+				font-size: 30px;
+				position: absolute;
+				top: 10px;
+				left: -60px;
+				text-shadow: none;
+				z-index: -1;
+			}
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

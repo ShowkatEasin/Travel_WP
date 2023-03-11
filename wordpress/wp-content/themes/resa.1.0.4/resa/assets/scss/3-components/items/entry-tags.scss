@@ -1,0 +1,20 @@
+.tags-links {
+	color: var(--resa_base_text_color);
+	font-size: 14px;
+	line-height: 1.7142857143;
+
+	a {
+		display: inline-block;
+		color: var(--resa_light_text_color);
+		border-radius: 5px;
+		padding: 4px 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		border: 1px solid var(--resa_border_color);
+
+		&:hover {
+			color: var(--resa_black_color);
+			border-color: var(--resa_black_color);
+		}
+	}
+}

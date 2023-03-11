@@ -1,0 +1,29 @@
+.widget.widget_recent_entries {
+	counter-reset: section;
+
+	li {
+		a {
+			display: block;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+
+	.post-date {
+		font-size: 13px;
+		color: var(--resa_light_text_color);
+		display: inline-block;
+		text-align: right;
+		width: 100%;
+
+		i {
+			margin-right: 8px;
+			color: var(--resa_primary_color);
+			font-size: 15px;
+			margin-top: -2px;
+		}
+	}
+}

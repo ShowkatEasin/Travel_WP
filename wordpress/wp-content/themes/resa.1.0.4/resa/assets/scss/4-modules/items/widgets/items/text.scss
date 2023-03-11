@@ -1,0 +1,22 @@
+.textwidget > * {
+	margin: 0;
+
+	&:not(:first-child) {
+		margin-top: 20px;
+	}
+	a {
+		--resa_link_text_decoration: underline;
+	}
+}
+.widget_text {
+	form {
+		margin: 0;
+	}
+
+	p {
+		margin: 0;
+	}
+	a {
+		--resa_link_text_decoration: underline;
+	}
+}

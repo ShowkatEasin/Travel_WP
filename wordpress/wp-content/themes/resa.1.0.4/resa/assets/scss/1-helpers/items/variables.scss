@@ -1,0 +1,308 @@
+:root {
+
+	// default values
+	--default-editor: var(--true);
+	--transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+
+	// conditions
+	--true: initial;
+	--false: "";
+	--has-link-decoration: var(--true);
+	--has-transparent-header: 0;
+
+
+	// container width
+	--container-width: #{'min(100%, var(--container-width-base))'};
+
+	@include media-breakpoint-down(sm) {
+		--container-width-base: calc(88vw - var(--frame-size, 0px) * 2);
+		// --container-width: 88vw;
+		// --container-width: calc(88vw - var(--frame-size, 0px) * 2);
+	}
+
+	@include media-breakpoint-up(md) {
+		--container-width-base: calc(90vw - var(--frame-size, 0px) * 2);
+		// --container-width: 90vw;
+		// --container-width: calc(90vw - var(--frame-size, 0px) * 2);
+	}
+}
+
+
+:root {
+
+	/* --------------------------------------------------------------------------
+		Colors variables
+	-------------------------------------------------------------------------- */
+
+	// Base colors
+	--resa_primary_color: #3b71fe;
+	--resa_secondary_color: #115fa5;
+	--resa_base_text_color: #404040;
+	--resa_black_color: #000000;
+	--resa_white_color: #FFFFFF;
+
+	--resa_light_text_color: #999999;
+
+
+	--resa_base_heading_color: #4A4A4A;
+	--resa_base_link_color: #0366E0; // default link color
+	--resa_base_link_hover_color: var(--resa_secondary_color);
+	--resa_body_background_color: #f7fafc;
+	--resa_border_color: #e5e5e5;
+
+	// Inputs
+	--resa_inputs_border_color: #dedede; // for inputs, selects & textarea
+
+	// Buttons
+	--resa_button_text_color: white;
+	--resa_button_background_color: #ef2c2c;
+	--resa_button_hover_text_color: var(--resa_white_color);
+	--resa_button_hover_background_color: #1e73be;
+	--resa_button_border_color: transparent;
+	--resa_button_hover_border_color: transparent;
+	--resa_button_border_width: 0;
+	--resa_button_border_style: solid;
+
+	--resa_text_button_color: var(--resa_primary_color);
+	--resa_text_button_hover_color: var(--resa_secondary_color);
+	--resa_text_button_underline_color: var(--resa_primary_color);
+	--resa_text_button_hover_underline_color: var(--resa_secondary_color);
+	--resa_text_button_underline_height: 3px;
+
+	--resa_button_is_link_style_text_color: #ef2c2c;
+	--resa_button_is_link_style_hover_text_color: #1e73be;
+	--resa_button_is_link_style_underline_color: #ef2c2c;
+	--resa_button_is_link_style_hover_underline_color: #1e73be;
+
+	// Page header
+	--resa_page_header_breadcrumb_background_color: #EEEEEE; // Alternative: #FFF2CF. page header/ breadcrumb section
+
+
+	// Link Colors
+	--resa_link_color: var(--resa_secondary_color);
+	--resa_link_hover_color: var(--resa_primary_color);
+
+
+	/* --------------------------------------------------------------------------
+		Typography variables
+	-------------------------------------------------------------------------- */
+
+	// typography
+	--resa_system_font_family: "Heebo", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	--resa_icon_font_family: var(--fa-style-family, "Font Awesome 6 Free");
+	--resa_icon_font_weight: 900;
+
+	--resa_text_emphasis_font_family: "Playfair Display", "Times New Roman", Garamond, Baskerville, Baskerville Old Face, Hoefler Text, 'Serif';
+	--resa_monospace_font_family: monospace, monospace;
+
+	--resa_base_font_size: 16px; // 15px: 0.9375rem [16px: 1rem]
+	--resa_base_font_weight: normal;
+	--resa_base_font_style: normal;
+	--resa_base_letter_spacing: 0; // -0.0311em is best for inter
+	--resa_base_line_height: 1.7;
+	--resa_base_font_family: -apple-system, blinkmacsystemfont, "segoe ui", roboto, "oxygen-sans", ubuntu, cantarell, "helvetica neue", helvetica, arial, sans-serif;
+	--resa_base_text_transform: none;
+	--resa_base_text_decoration: none;
+
+	--resa_heading_h1_font_size: 2.25rem;
+	--resa_heading_h2_font_size: 1.75rem;
+	--resa_heading_h3_font_size: 1.5rem;
+	--resa_heading_h4_font_size: 1.25rem;
+	--resa_heading_h5_font_size: 1.125rem;
+	--resa_heading_h6_font_size: 1rem;
+
+	--resa_heading_font_weight: bold;
+	--resa_heading_letter_spacing: 0; // -0.0415625em is best for inter
+	--resa_heading_line_height: 1.2;
+	--resa_heading_font_family: "Inter", sans-serif;
+
+
+	--resa_button_font_size: 0.9375rem; // 14px: 15px: 0.9375rem [16px: 1rem]
+	--resa_button_font_weight: normal;
+	--resa_button_line_height: 1;
+
+	// Entry
+	--resa_woo_product_title_size: 0.9375rem; // 15px: 0.9375rem [16px: 1rem]
+
+	--resa_entry_single_title_font_size: 2.25rem;
+
+	/* --------------------------------------------------------------------------
+		Button Border
+	-------------------------------------------------------------------------- */
+	--resa_buttons_border_radius: 3px;
+	--resa_inputs_border_radius: 5px;
+	--resa_inputs_border_width: 1px;
+
+
+	/* --------------------------------------------------------------------------
+		Form Fields
+	-------------------------------------------------------------------------- */
+	--resa_inputs_padding_top: 0.5em;
+	--resa_inputs_padding_right: 1em;
+	--resa_inputs_padding_botom: 0.5em;
+	--resa_inputs_padding_left: 1em;
+	/* --------------------------------------------------------------------------
+		Grid
+	-------------------------------------------------------------------------- */
+	--resa_grid_gutter_width: 30px;
+	--resa_grid_gutter_width_none: 0;
+
+	/* --------------------------------------------------------------------------
+		Containers
+	-------------------------------------------------------------------------- */
+	--resa_container_width: 1400px;
+	--resa_container_width_narrow: 800px;
+	--resa_container_width_wide: 100%;
+
+	/* --------------------------------------------------------------------------
+		Breakpoints
+	-------------------------------------------------------------------------- */
+	--resa_large_device_breakpoint: 1024px;
+	--resa_medium_device_breakpoint: 991px;
+	--resa_tablet_device_breakpoint: 768px;
+	--resa_mobile_device_breakpoint: 575px;
+
+	--resa_mobile_device_gutter_width: 5px;
+
+	/* --------------------------------------------------------------------------
+		Width
+	-------------------------------------------------------------------------- */
+	--resa_narrow_section_base_width: 700px;
+	--resa_default_primary_area_width: 100%;
+	--resa_default_sidebar_width: 30%;
+	--resa_boresad_layout_maxwidth: 1170px;
+	--resa_no_sidebar_narrow_container_width: 800px; // search, blog, archive
+	--resa_default_boresad_layout_container_maxwidth: 1170px;
+	--resa_default_layout_container_stretch_width: 100%;
+	--resa_default_layout_container_stretch_maxwidth: 1920px;
+
+
+	/* --------------------------------------------------------------------------
+	  Transparent header
+	-------------------------------------------------------------------------- */
+	--resa_transparent_header_background_color_desktop: rgba(255, 255, 255, 0);
+	--resa_transparent_header_background_color_tablet: rgba(255, 255, 255, 0);
+	--resa_transparent_header_background_color_mobile: rgba(255, 255, 255, 0);
+	--resa_transparent_header_border_color_desktop: var(--resa_border_color);
+	--resa_transparent_header_border_color_tablet: var(--resa_border_color);
+	--resa_transparent_header_border_color_mobile: var(--resa_border_color);
+
+
+	/* --------------------------------------------------------------------------
+	   Site title & description
+   -------------------------------------------------------------------------- */
+
+	--resa_site_title_font_size: 1.375rem;
+	--resa_site_title_font_weight: 600;
+	--resa_site_title_letter_spacing: 0;
+	--resa_site_title_line_height: 1.2;
+	--resa_site_title_font_family: "Inter", sans-serif;
+	--resa_site_title_color: var(--resa_base_text_color);
+	--resa_site_title_hover_color: var(--resa_secondary_color);
+	--resa_site_title_font_syle: normal;
+	--resa_site_title_text_transform: inherit;
+
+	--resa_site_description_font_size: 0.813rem; // 13px
+	--resa_site_description_font_weight: normal;
+	--resa_site_description_letter_spacing: 0;
+	--resa_site_description_line_height: 1.4;
+	--resa_site_description_color: var(--resa_base_text_color);
+	--resa_site_description_font_syle: normal;
+	--resa_site_description_text_transform: inherit;
+
+
+	/* --------------------------------------------------------------------------
+		Menu & Navigation
+	-------------------------------------------------------------------------- */
+
+	--resa_navigation_item_font_size: 0.875rem;
+	--resa_navigation_first_level_item_font_size: 0.875rem;
+	--resa_navigation_item_font_weight: normal;
+	--resa_navigation_first_level_item_font_weight: normal;
+	--resa_navigation_item_letter_spacing: 0;
+	--resa_navigation_first_level_item_letter_spacing: 0;
+	--resa_navigation_item_line_height: 1;
+	--resa_navigation_first_level_item_line_height: 1;
+	--resa_navigation_dropdown_top_spacing: 20px;
+
+	--resa_navigation_item_color: var(--resa_base_text_color);
+	--resa_navigation_item_hover_color: var(--resa_secondary_color);
+
+	--resa_navigation_dropdown_width: 200px;
+	--resa_navigation_dropdown_background_color: var(--resa_white_color);
+	--resa_navigation_dropdown_top_border_color: var(--resa_primary_color);
+	--resa_navigation_dropdown_item_color: var(--resa_base_text_color);
+	--resa_navigation_dropdown_item_seperator_color: transparent;
+	--resa_navigation_dropdown_item_hover_color: var(--resa_secondary_color);
+
+	/* --------------------------------------------------------------------------
+		Canvas & Mobile navigation
+	-------------------------------------------------------------------------- */
+
+	--resa_menu_toggle_button_color: var(--resa_base_text_color);
+	--resa_mobile_canvas_width: 350px;
+	--resa_canvas_background_color: var(--resa_white_color);
+	--resa_canvas_border_color: #E5E5E5;
+	--resa_canvas_border_width: 1px;
+	--resa_canvas_border_radius: 0px;
+	--resa_canvas_menu_item_color: var(--resa_navigation_item_color);
+	--resa_canvas_menu_item_color_hover: var(--resa_navigation_item_hover_color);
+	--resa_canvas_menu_item_color_active: var(--resa_navigation_item_hover_color);
+	--resa_canvas_menu_item_seperator_color: var(--resa_border_color);
+	--resa_canvas_menu_item_seperator_width: 1px;
+	--resa_canvas_menu_item_seperator_style: solid;
+
+	--resa_canvas_menu_item_font_size: 14px;
+	--resa_canvas_menu_item_font_weight: normal;
+	--resa_canvas_menu_item_line_height: 1;
+
+	--resa_canvas_menu_item_top_padding: 10px;
+	--resa_canvas_menu_item_bottom_padding: 10px;
+	--resa_canvas_menu_submenu_toggle_button_color: var(--resa_canvas_menu_item_color);
+	--resa_canvas_menu_submenu_toggle_button_background_color: transparent;
+	--resa_canvas_menu_submenu_toggle_button_border_radius: 0px;
+	--resa_canvas_menu_submenu_toggle_button_distance: 7px;
+
+	/* --------------------------------------------------------------------------
+		Layouts
+	-------------------------------------------------------------------------- */
+
+	--resa_primary_content_area_flex: 9;
+	--resa_secondary_sidebar_flex: 3;
+
+	--resa_primary_content_area_flex_order: 1;
+	--resa_secondary_sidebar_flex_order: 2;
+	--resa_section_spacing: 20px;
+
+
+	/* --------------------------------------------------------------------------
+		Icon
+	-------------------------------------------------------------------------- */
+	--resa_mobile_device_woo_product_title_font_size: 14px;
+	--resa_social_icon_size: 16px;
+
+	/* --------------------------------------------------------------------------
+		zindex
+	-------------------------------------------------------------------------- */
+
+	--resa_sticky_header_zindex: 9999999;
+	--resa_submenu_dropdown_zindex: 99999995;
+	--resa_search_form_modal_zindex: 999999910;
+	--resa_mobile_canvas_zindex: 999999920;
+	--resa_mobile_canvas_mask_zindex: 999999915;
+
+
+	// Paragraph
+	--resa_content_spacing: 1.5em;
+
+	//List Items
+	--resa_list_indent: 2.5em;
+	--resa_list_item_spacing: 0.3em;
+
+	//Links
+	--resa_link_text_decoration: none;
+
+	--resa_bottom_footer_background_color: #eeeeee;
+}
+

@@ -1,0 +1,14 @@
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+
+	font-family: var(--resa_base_font_family);
+	font-size: var(--resa_base_font_size);
+	font-weight: var(--resa_base_font_weight);
+	font-style: var(--resa_base_font_style, inherit);
+	line-height: var(--resa_base_line_height);
+	letter-spacing: var(--resa_base_letter_spacing);
+	text-transform: var(--resa_base_text_transform);
+	-webkit-text-decoration: var(--resa_base_text_decoration);
+	text-decoration: var(--resa_base_text_decoration);
+}

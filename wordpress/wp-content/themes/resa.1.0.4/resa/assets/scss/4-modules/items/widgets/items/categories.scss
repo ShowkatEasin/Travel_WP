@@ -1,0 +1,18 @@
+.widget_categories {
+	li {
+		&.current-cat {
+
+			a {
+
+				color: var(--resa_primary_color);
+			}
+		}
+
+		a {
+
+			&:before {
+				content: "\f105";
+			}
+		}
+	}
+}

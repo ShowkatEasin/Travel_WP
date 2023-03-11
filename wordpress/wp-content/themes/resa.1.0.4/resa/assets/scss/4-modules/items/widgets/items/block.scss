@@ -1,0 +1,49 @@
+.widget.widget_block {
+	ul {
+		margin-bottom: 0;
+		padding-inline-start: 0;
+
+		li {
+			list-style: none;
+			margin-bottom: 1.41575em;
+		}
+
+		a {
+			&:not(.button) {
+				color: var(--resa_base_text_color);
+
+				&:hover {
+					color: var(--resa_primary_color);
+				}
+			}
+		}
+
+		.children {
+			margin-top: 0.6180469716em;
+		}
+	}
+
+	ol {
+		margin-bottom: 0;
+		padding-inline-start: 0;
+
+		li {
+			list-style: none;
+			margin-bottom: 1.41575em;
+		}
+
+		a {
+			&:not(.button) {
+				color: var(--resa_base_text_color);
+
+				&:hover {
+					color: var(--resa_primary_color);
+				}
+			}
+		}
+
+		.children {
+			margin-top: 0.6180469716em;
+		}
+	}
+}

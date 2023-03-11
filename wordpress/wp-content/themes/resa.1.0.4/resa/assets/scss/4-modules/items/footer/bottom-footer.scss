@@ -1,0 +1,18 @@
+.resa-bottom-footer {
+	background-color: var(--resa_bottom_footer_background_color);
+
+	p {
+		margin: 0;
+		flex: 1;
+		text-align:center;
+	}
+
+	.resa-footer-copyright {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 80px;
+	}
+}
+
+

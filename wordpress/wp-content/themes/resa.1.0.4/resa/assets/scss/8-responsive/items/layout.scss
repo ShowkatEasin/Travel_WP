@@ -1,0 +1,47 @@
+@media (max-width: 999px) {
+	[data-device="desktop"] {
+		display: none;
+	}
+	.resa-mobile-menu-toggle {
+		display: block;
+	}
+	.resa-desktop-menu-toggle {
+		display: none;
+	}
+}
+
+@media (min-width: 1000px) {
+	[data-device="mobile"] {
+		display: none;
+	}
+	.resa-mobile-menu-toggle {
+		display: none;
+	}
+	.resa-desktop-menu-toggle {
+		display: block;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.site-content .resa-row {
+		flex-direction: column;
+	}
+	.resa-primary-content-area {
+
+		max-width: 100%;
+
+	}
+	.resa-secondary-sidebar-area {
+
+		max-width: 100%;
+	}
+
+}
+
+@media (max-width: 1320px) {
+	.resa-container {
+		max-width: calc(100% - 30px);
+	}
+}

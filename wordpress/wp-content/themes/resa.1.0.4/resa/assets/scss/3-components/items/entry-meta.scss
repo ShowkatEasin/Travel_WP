@@ -1,0 +1,32 @@
+.entry-meta {
+	margin-bottom: 10px;
+	line-height: 1.6923076923;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 15px;
+
+
+	.posted-on a, .post-author {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 5px;
+		color: var(--resa_secondary_color);
+
+		&:hover {
+			color:var(--resa_primary_color);
+
+		}
+	}
+}
+
+.byline {
+	display: none;
+}
+
+.updated {
+	&:not(.published) {
+		display: none;
+	}
+}

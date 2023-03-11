@@ -1,0 +1,26 @@
+@media (max-width: 575px) {
+
+	h1 {
+		font-size: calc(var(--resa_heading_h1_font_size) - 25%);
+	}
+
+	h2 {
+		font-size: calc(var(--resa_heading_h2_font_size) - 20%);
+	}
+
+	h3 {
+		font-size: calc(var(--resa_heading_h3_font_size) - 15%);
+	}
+
+	h4 {
+		font-size: calc(var(--resa_heading_h4_font_size) - 10%);
+	}
+
+	h5 {
+		font-size: calc(var(--resa_heading_h5_font_size) - 5%);
+	}
+
+	h6 {
+		font-size: calc(var(--resa_heading_h6_font_size));
+	}
+}

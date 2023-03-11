@@ -1,0 +1,16 @@
+.widget_archive {
+	ul, ol {
+		li {
+			a {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+	}
+
+	select {
+		margin-bottom: 0;
+	}
+
+
+}

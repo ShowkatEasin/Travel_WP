@@ -1,0 +1,48 @@
+$block_elements: 'article', 'aside', 'details', 'figcaption', 'figure', 'footer', 'header', 'hgroup', 'main', 'menu', 'nav', 'section', 'summary';
+
+$inline_block_elements: 'audio', 'canvas', 'progress', 'video';
+
+
+//block elements
+#{$block_elements} {
+	display: block;
+}
+
+#{$inline_block_elements} {
+	display: inline-block;
+}
+
+canvas, progress, video {
+	vertical-align: baseline;
+	max-width: 100%;
+}
+
+$reset_elements: 'body', 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'em', 'ol', 'ul', 'li', 'tr', 'th', 'td', 'dl', 'img', 'ins', 'sub', 'sup', 'big', 'cite', 'code', 'form', 'small', 'label', 'table', 'figure', 'button', 'legend', 'strike', 'address', 'caption', 'fieldset', 'blockquote';
+
+#{$reset_elements} {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: inherit;
+	text-align: inherit;
+	line-height: inherit;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+:focus {
+	outline-color:var(--resa_black_color);
+}
+
+.hidden {
+	display: none !important;
+}
+
+
+
+
+
+
+

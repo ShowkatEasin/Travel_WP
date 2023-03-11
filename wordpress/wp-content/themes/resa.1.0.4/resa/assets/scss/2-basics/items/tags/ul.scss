@@ -1,0 +1,14 @@
+ul {
+	list-style: disc;
+	margin-bottom: var(--resa_list_item_spacing);
+	padding-inline-start: var(--resa_list_indent);
+
+	li {
+		margin-bottom: var(--resa_list_item_spacing);
+	}
+
+	ul, ol {
+
+		margin-top: var(--resa_list_item_spacing);
+	}
+}

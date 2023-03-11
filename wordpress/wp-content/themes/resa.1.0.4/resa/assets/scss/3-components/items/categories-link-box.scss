@@ -1,0 +1,30 @@
+.categories-link-box {
+	a {
+		color: var(--resa_white_color);
+		background-color: var(--resa_primary_color);
+
+		&:hover {
+			background-color: var(--resa_secondary_color);
+		}
+	}
+}
+.categories-link-box {
+	margin-bottom: 10px;
+
+	a {
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 1.6666666667;
+		padding: 4px 10px;
+		border-radius: 4px;
+		margin-right: 4px;
+		margin-bottom: 4px;
+
+	}
+}
+.single-content {
+	.categories-link-box {
+		margin-bottom: 16px;
+	}
+}

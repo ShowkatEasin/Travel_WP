@@ -1,0 +1,47 @@
+.wp-block-calendar, .widget_calendar {
+	text-align: left;
+
+	table {
+		caption {
+			padding: 5px 0;
+			background: var(--resa_primary_color);
+			color: var(--resa_white_color);
+			text-align: center;
+		}
+
+		th {
+			text-align: center;
+			border: 1px solid;
+			border-color: var(--resa_border_color);
+			background: #f1f1f1;
+			color: var(--resa_black_color);
+			padding: 5px;
+			font-weight: bold;
+		}
+
+		td {
+
+			text-align: center;
+			border: 1px solid;
+			border-color: var(--resa_border_color);
+
+			&#today {
+				font-weight: bold;
+				background: var(--resa_primary_color);
+				color: var(--resa_white_color);
+			}
+		}
+
+		tbody {
+			a {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.wp-calendar-nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}

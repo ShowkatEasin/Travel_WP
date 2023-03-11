@@ -1,0 +1,45 @@
+
+table {
+	border-collapse: collapse;
+	margin: 0 0 1.41575em;
+	width: 100%;
+	border-spacing: 0;
+	max-width: 100%;
+
+	caption {
+		padding: 1em 0;
+		font-weight: 600;
+	}
+
+	td {
+		padding: 0.8em;
+		text-align: left;
+		vertical-align: middle;
+		word-break: break-all;
+		border: 1px solid;
+		border-color: var(--resa_border_color);
+
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	th {
+		padding: 0.8em;
+		text-align: left;
+		vertical-align: top;
+		word-break: break-all;
+		border: 1px solid;
+		border-color: var(--resa_border_color);
+		font-weight: 500;
+
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+}

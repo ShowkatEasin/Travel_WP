@@ -1,0 +1,15 @@
+.resa-main-header {
+	padding-top: 0em;
+	padding-bottom: 0em;
+	background: #fff;
+
+	&[data-device="desktop"] {
+		padding: 10px 0;
+	}
+
+	.resa-row {
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+

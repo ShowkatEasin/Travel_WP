@@ -1,0 +1,96 @@
+.resa-toggle-wrapper {
+	-js-display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	cursor: pointer;
+}
+
+.resa-toggle-wrapper .resa-toggle {
+	margin-left: auto;
+	padding-left: 10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.resa-toggle-wrapper .customize-control-title {
+	margin-bottom: 0;
+}
+
+.resa-toggle {
+	-js-display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-left: auto;
+}
+
+.resa-toggle input[type="checkbox"] {
+	display: none;
+}
+
+.resa-toggle input[type="checkbox"]:checked + label .resa-toggle-switch {
+	background-color: #0085ba !important;
+}
+
+.resa-toggle input[type="checkbox"]:checked + label .resa-toggle-switch:after {
+	-webkit-transform: translateX(28px);
+	-ms-transform: translateX(28px);
+	transform: translateX(28px);
+}
+
+.resa-toggle .resa-toggle-switch {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #aaa;
+	border-radius: 9px;
+	padding: 2px;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+	outline: 0;
+	display: block;
+	width: 40px;
+	height: 16px;
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin: 0;
+}
+
+.resa-toggle .resa-toggle-switch:after {
+	position: relative;
+	content: '';
+	top: -5.5px;
+	left: -8px;
+	display: block;
+	width: 22px;
+	height: 22px;
+	border-radius: 50px;
+	background: #fff;
+	box-shadow: 2px 1px 4px 0 rgba(72, 72, 72, 0.5);
+	transition: all .2s ease-in;
+}
+
+.resa-toggle label {
+	-js-display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #23282d;
+}
+
+.resa-toggle label:hover .resa-toggle-switch {
+	background-color: #7698b1;
+}
